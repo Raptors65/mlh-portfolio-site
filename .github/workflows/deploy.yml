@@ -29,4 +29,4 @@ jobs:
           SSH_IP: ${{ secrets.SSH_IP }}
 
       - name: Deploy site
-        run: ssh my-vps '~/mlh-portfolio-site/scripts/redeploy-site.sh'
+        run: ssh my-vps 'sh ~/mlh-portfolio-site/scripts/redeploy-site.sh'
